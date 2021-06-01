@@ -21,16 +21,6 @@ html {
   font-family: "monument-bold";
   src: url("/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf");
 }
-@font-face {
-  font-family: "sofia";
-  src: url("/Sofia/Sofia\ Pro\ Regular\ Az.otf");
-}
-@font-face {
-  font-family: "sofia-light";
-  src: url("/Sofia/Sofia\ Pro\ UltraLight\ Az.otf");
-}
-
-// #c59d5f;
 
 body {
   // overflow-y:hidden; // change with JS after the preloader
@@ -230,54 +220,6 @@ max-height: 30vh;
   }
 }
 
-.hero {
-  grid-area: content;
-  z-index: 3;
-  img {
-    transition: transform 0.5s linear;
-
-    max-width: 100%;
-    max-height: 100%;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-}
-
-
-.menu {
-  font-size: 2rem;
-  font-family: $sofia-font;
-  cursor: pointer;
-  opacity: 100%;
-  transition: opacity 1s ease-in-out, background-color 0.5s linear;
-  position: block;
-
-  &:hover {
-    color: black;
-    background-color: $custom-white;
-  }
-}
-.link-menu {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: inherit;
-}
-
-.hide-menu {
-  position: absolute;
-  top: -50%;
-  opacity: 0%;
-  z-index: -1;
-}
-
-.hide-hero {
-  // position: relative;
-  grid-area: auto;
-}
 
 .scroll {
   width: 100%;
@@ -312,7 +254,7 @@ max-height: 30vh;
 
 .about-me {
   width: 50%;
-  height: 80vh;
+  min-height: 100vh;
  position: relative;
   top: -15vh;
   background: rgba(255, 255, 255, 0.25);
@@ -323,6 +265,7 @@ max-height: 30vh;
   margin: auto;
   position: relative;
   z-index: 1;
+  font-size: 1rem;
   svg {
     width: 100%;
     height: 120vh;
@@ -336,28 +279,16 @@ max-height: 30vh;
   padding: 0 2rem;
 }
 
-.title-two {
-  width: 100%;
-  height: 15%;
-  text-align: center;
-  // color: $custom-white;
-  // background-color: $custom-black;
-  padding: 2rem 0;
-  z-index: 99;
-}
-.title-three {
-  width: 53.5%;
-  text-align: center;
-  margin: auto;
-  color: $custom-white;
-  background-color: $custom-black;
-  padding: 2rem 0;
-  z-index: 99;
-  line-height: 2.5rem;
-  border: 1px solid $white-border;
-  border-bottom: none;
-  border-top: none;
-}
+  .title-two {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    // color: $custom-white;
+    // background-color: $custom-black;
+    padding: 2rem 0;
+    z-index: 99;
+  }
+
 
 .about-me-text {
   color: $text-color;
@@ -425,11 +356,11 @@ max-height: 30vh;
 
   h3 {
     font-size: 2rem;
-    color: $custom-gold;
+    color: $custom-orange;
     margin-bottom: 1rem;
   }
   span {
-    color: $custom-gold;
+    color: $custom-orange;
   }
   ul {
     list-style: none;

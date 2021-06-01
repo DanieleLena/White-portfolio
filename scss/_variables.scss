@@ -1,14 +1,9 @@
-// $custom-black: #0d0d0d;
 $custom-black: #292d32;
-// $custom-gold: #c59d5f;
-$custom-gold: #fb8600;
-// $custom-gold: 	#20E4B8;
+// $custom-gold: #fb8600;
 $custom-orange: #fb7900ea;
-// $custom-gold: gold;
 
 $custom-white: #fffcf4;
 $white-border: rgba(255, 255, 255, 0.322);
-$sofia-font: "sofia";
 $monument-font: "monument-regular";
 $main-font: 'Poppins', sans-serif;
 $text-color: rgb(102, 94, 94);
@@ -20,7 +15,6 @@ $shadow-bottom-light: 0.047em -0.05em 0.132em #ffffff;
 $dark: #292d32;
 $shadow-top-dark: -0.047em 0.08em 0.132em #02050e;
 $shadow-bottom-dark: 0.047em -0.05em 0.132em #21272c;
-$dark: #292d32;
 
 @mixin glass {
   background: rgba(255, 255, 255, 0.25);
@@ -43,7 +37,7 @@ section {
 
     span {
       color: transparent;
-      -webkit-text-stroke: 1px white;
+      -webkit-text-stroke: 1px black;
     }
   }
 }
